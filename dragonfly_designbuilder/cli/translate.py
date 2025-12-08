@@ -71,8 +71,11 @@ def model_to_dsbxml_cli(
         model_file: Full path to a Dragonfly Model JSON or Pkl file.
     """
     try:
+        full_geometry = not multiplier
+        no_plenum = not plenum
+        no_ceil_adjacency = not ceil_adjacency
         model_to_dsbxml(
-            model_file, multiplier, plenum, ceil_adjacency, merge_method,
+            model_file, full_geometry, no_plenum, no_ceil_adjacency, merge_method,
             xml_template, program_name, output_file
         )
     except Exception as e:
