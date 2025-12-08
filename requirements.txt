@@ -1,2 +1,2 @@
-honeybee-designbuilder==0.3.1
+honeybee-designbuilder==0.3.2
 dragonfly-energy>=1.35.67
